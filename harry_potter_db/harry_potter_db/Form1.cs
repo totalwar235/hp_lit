@@ -12,6 +12,8 @@ namespace harry_potter_db
 {
     public partial class Main : Form
     {
+        bool editing = false;
+        int opened;
         public Main()
         {
             InitializeComponent();
@@ -34,7 +36,19 @@ namespace harry_potter_db
 
         private void Edit_Spell_Click(object sender, EventArgs e)
         {
-            text.ReadOnly = false;
+            if(!editing)
+            {
+                text.ReadOnly = false;
+                Spell_List.Enabled = false;
+                editing = true;
+            }
+            else
+            {
+                text.ReadOnly = true;
+                Spell_List.Enabled = true;
+                editing = false;
+            }
+            
         }
 
         private void text_TextChanged(object sender, EventArgs e)
@@ -44,7 +58,15 @@ namespace harry_potter_db
 
         private void Save_Spell_Click(object sender, EventArgs e)
         {
-            text.ReadOnly = true;
+            if(editing)
+            {
+                text.ReadOnly = true;
+                File.WriteAllText("spells\\" + Spell_List.SelectedItem.ToString(), text.Text);
+                text.ReadOnly = true;
+                Spell_List.Enabled = true;
+                editing = false;
+            }
+
         }
 
         private void Add_Spell_Click(object sender, EventArgs e)
@@ -58,7 +80,15 @@ namespace harry_potter_db
 
         private void Load_spell_Click(object sender, EventArgs e)
         {
+            if(Spell_List.SelectedIndex != -1 && Spell_List.SelectedIndex != opened)
+            {
+                text.ResetText();
+                label1.Text = Spell_List.SelectedItem.ToString() + "\n\n";
 
+                text.AppendText(File.ReadAllText("spells\\" + Spell_List.SelectedItem.ToString()));
+                opened = Spell_List.SelectedIndex;
+            }
+        
         }
 
         private void Spell_List_MouseClick(object sender, MouseEventArgs e)
@@ -75,6 +105,11 @@ namespace harry_potter_db
         }
 
         private void Spell_List_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

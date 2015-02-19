@@ -34,11 +34,12 @@
             this.text = new System.Windows.Forms.RichTextBox();
             this.Edit_Spell = new System.Windows.Forms.Button();
             this.Save_Spell = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Load_spell
             // 
-            this.Load_spell.Location = new System.Drawing.Point(175, 12);
+            this.Load_spell.Location = new System.Drawing.Point(12, 39);
             this.Load_spell.Name = "Load_spell";
             this.Load_spell.Size = new System.Drawing.Size(125, 23);
             this.Load_spell.TabIndex = 1;
@@ -48,6 +49,7 @@
             // 
             // Spell_List
             // 
+            this.Spell_List.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Spell_List.FormattingEnabled = true;
             this.Spell_List.Location = new System.Drawing.Point(12, 12);
             this.Spell_List.Name = "Spell_List";
@@ -58,7 +60,7 @@
             // 
             // Add_Spell
             // 
-            this.Add_Spell.Location = new System.Drawing.Point(307, 12);
+            this.Add_Spell.Location = new System.Drawing.Point(12, 68);
             this.Add_Spell.Name = "Add_Spell";
             this.Add_Spell.Size = new System.Drawing.Size(75, 23);
             this.Add_Spell.TabIndex = 4;
@@ -68,17 +70,17 @@
             // 
             // text
             // 
-            this.text.Location = new System.Drawing.Point(13, 40);
+            this.text.Location = new System.Drawing.Point(93, 70);
             this.text.Name = "text";
             this.text.ReadOnly = true;
-            this.text.Size = new System.Drawing.Size(526, 353);
+            this.text.Size = new System.Drawing.Size(286, 285);
             this.text.TabIndex = 5;
             this.text.Text = "";
             this.text.TextChanged += new System.EventHandler(this.text_TextChanged);
             // 
             // Edit_Spell
             // 
-            this.Edit_Spell.Location = new System.Drawing.Point(388, 12);
+            this.Edit_Spell.Location = new System.Drawing.Point(12, 97);
             this.Edit_Spell.Name = "Edit_Spell";
             this.Edit_Spell.Size = new System.Drawing.Size(75, 23);
             this.Edit_Spell.TabIndex = 6;
@@ -88,7 +90,7 @@
             // 
             // Save_Spell
             // 
-            this.Save_Spell.Location = new System.Drawing.Point(470, 11);
+            this.Save_Spell.Location = new System.Drawing.Point(12, 126);
             this.Save_Spell.Name = "Save_Spell";
             this.Save_Spell.Size = new System.Drawing.Size(75, 23);
             this.Save_Spell.TabIndex = 7;
@@ -96,11 +98,25 @@
             this.Save_Spell.UseVisualStyleBackColor = true;
             this.Save_Spell.Click += new System.EventHandler(this.Save_Spell_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(173, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Harry\'s Spell Book";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 405);
+            this.ClientSize = new System.Drawing.Size(391, 362);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Save_Spell);
             this.Controls.Add(this.Edit_Spell);
             this.Controls.Add(this.text);
@@ -110,6 +126,7 @@
             this.Name = "Main";
             this.Text = "Harry\'s Spell Book";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,6 +138,7 @@
         private System.Windows.Forms.RichTextBox text;
         private System.Windows.Forms.Button Edit_Spell;
         private System.Windows.Forms.Button Save_Spell;
+        private System.Windows.Forms.Label label1;
     }
 }
 
