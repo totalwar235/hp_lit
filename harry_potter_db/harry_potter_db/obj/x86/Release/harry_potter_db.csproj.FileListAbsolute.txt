@@ -1,0 +1,7 @@
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\bin\Release\harry_potter_db.exe
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\bin\Release\harry_potter_db.pdb
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Release\harry_potter_db.Main.resources
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Release\harry_potter_db.Properties.Resources.resources
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Release\harry_potter_db.csproj.GenerateResource.Cache
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Release\harry_potter_db.exe
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Release\harry_potter_db.pdb

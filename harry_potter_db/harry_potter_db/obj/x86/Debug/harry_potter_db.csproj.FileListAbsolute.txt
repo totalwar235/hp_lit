@@ -1,0 +1,15 @@
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\bin\Debug\harry_potter_db.exe
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\bin\Debug\harry_potter_db.pdb
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\obj\x86\Debug\harry_potter_db.Main.resources
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\obj\x86\Debug\harry_potter_db.Properties.Resources.resources
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\obj\x86\Debug\harry_potter_db.csproj.GenerateResource.Cache
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\obj\x86\Debug\harry_potter_db.exe
+C:\Users\Reed\AppData\Local\Temporary Projects\harry_potter_db\obj\x86\Debug\harry_potter_db.pdb
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.exe
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.pdb
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.Main.resources
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.Properties.Resources.resources
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.csproj.GenerateResource.Cache
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\bin\Debug\harry_potter_db.exe
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\bin\Debug\harry_potter_db.pdb
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.newspell.resources
