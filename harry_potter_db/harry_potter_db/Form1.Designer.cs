@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.Load_spell = new System.Windows.Forms.Button();
             this.Spell_List = new System.Windows.Forms.ComboBox();
             this.Add_Spell = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.Edit_Spell = new System.Windows.Forms.Button();
             this.Save_Spell = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Load_spell
@@ -70,7 +73,9 @@
             // 
             // text
             // 
-            this.text.Location = new System.Drawing.Point(93, 70);
+            this.text.BackColor = System.Drawing.Color.Orange;
+            this.text.ForeColor = System.Drawing.Color.Maroon;
+            this.text.Location = new System.Drawing.Point(97, 70);
             this.text.Name = "text";
             this.text.ReadOnly = true;
             this.text.Size = new System.Drawing.Size(286, 285);
@@ -102,7 +107,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(173, 9);
             this.label1.Name = "label1";
@@ -111,11 +116,22 @@
             this.label1.Text = "Harry\'s Spell Book";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 155);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(391, 362);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Save_Spell);
             this.Controls.Add(this.Edit_Spell);
@@ -123,8 +139,12 @@
             this.Controls.Add(this.Add_Spell);
             this.Controls.Add(this.Spell_List);
             this.Controls.Add(this.Load_spell);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Harry\'s Spell Book";
+            this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,6 +159,7 @@
         private System.Windows.Forms.Button Edit_Spell;
         private System.Windows.Forms.Button Save_Spell;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
