@@ -22,3 +22,4 @@ C:\Users\Anonymous\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x
 C:\Users\Anonymous\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.Properties.Resources.resources
 C:\Users\Anonymous\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.csproj.GenerateResource.Cache
 C:\Users\Anonymous\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.csprojResolveAssemblyReference.cache
+C:\Users\Reed\Documents\GitHub\hp_lit\harry_potter_db\harry_potter_db\obj\x86\Debug\harry_potter_db.csprojResolveAssemblyReference.cache

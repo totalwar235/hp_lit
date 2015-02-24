@@ -83,7 +83,7 @@ namespace harry_potter_db
             if(Spell_List.SelectedIndex != -1 && Spell_List.SelectedIndex != opened)
             {
                 text.ResetText();
-                label1.Text = Spell_List.SelectedItem.ToString() + "\n\n";
+                label1.Text = Spell_List.SelectedItem.ToString();
 
                 text.AppendText(File.ReadAllText("spells\\" + Spell_List.SelectedItem.ToString()));
                 opened = Spell_List.SelectedIndex;

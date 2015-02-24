@@ -74,6 +74,7 @@
             // text
             // 
             this.text.BackColor = System.Drawing.Color.Orange;
+            this.text.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text.ForeColor = System.Drawing.Color.Maroon;
             this.text.Location = new System.Drawing.Point(97, 70);
             this.text.Name = "text";

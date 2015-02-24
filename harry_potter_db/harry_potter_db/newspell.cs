@@ -24,12 +24,20 @@ namespace harry_potter_db
                 //makes the file
                 if (Directory.Exists("spells"))
                 {
-                    File.CreateText("spells\\"+textBox1.Text);
+                    using (var myFile = File.CreateText("spells\\" + textBox1.Text))
+                    {
+                        // interact with myFile here, it will be disposed automatically
+                        myFile.Write("Pronounced: \n\nDescription:");
+                    }
                 }
                 else
                 {
                     Directory.CreateDirectory("spells");
-                    File.CreateText("spells\\" + textBox1.Text);
+                    using (var myFile = File.CreateText("spells\\" + textBox1.Text))
+                    {
+                        // interact with myFile here, it will be disposed automatically
+                        myFile.Write("Pronounced: \n\nDescription:");
+                    }
                 }
                 this.Close();
             }
